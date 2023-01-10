@@ -3,7 +3,7 @@
 from .. import BotzHub
 from telethon import events, Button
 
-@BotzHub.on(events.NewMessage(incoming=True, pattern="/start"))
+@BotzHub.on(events.NewMessage(incoming=True, pattern="/.start"))
 async def start(event):
     await event.reply("Heelo")
 
